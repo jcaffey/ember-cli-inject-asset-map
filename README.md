@@ -1,6 +1,6 @@
-# Ember-cli-copy-asset-map
+# Ember-cli-inject-asset-map
 
-This README outlines the details of collaborating on this Ember addon.
+This has no customizations right now, but I intend to update whenever possible to allow the world to use this. This injects an AssetMapController into your app with access to content of assetMap.json your Brocfile produces (generateAssetMap: true). This is useful if you are computing image paths that are fingerprinted.
 
 ## Installation
 
