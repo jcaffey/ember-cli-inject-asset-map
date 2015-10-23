@@ -34,6 +34,9 @@
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },
+  "dependencies": {
+    "colors": "~1.1.2"
+  },
   "keywords": [
     "ember-addon"
   ],
