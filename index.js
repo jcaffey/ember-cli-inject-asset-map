@@ -19,11 +19,17 @@ module.exports = {
 
     console.log('\nInjecting asset map hash...'.rainbow);
 
-    // Write to temp and dist
-    fs.writeFileSync(jsPath, injectedJs, 'utf-8');
-    fs.writeFileSync(path.join('./dist', assetMap['assets/art19.js']), injectedJs, 'utf-8');
+    var success = true;
+    if (fs.existsSync(jsPath)) {
+      fs.writeFileSync(jsPath, injectedJs, 'utf-8');
+    } else {
+      success = false;
+      console.log('Unable to inject asset map. File "' + jsPath + '" does not exist.');
+    }
 
-    console.log('Done! Asset paths are available in all components, controllers, and routes via assetMap.assetMapHash.'.rainbow);
+    if (success) {
+      console.log('Done! Asset paths are available in all components, controllers, and routes via assetMap.assetMapHash.'.rainbow);
+    }
   }
 };
 
