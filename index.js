@@ -6,6 +6,11 @@ module.exports = {
 
   // Add asset map hash to asset-map controller
   postBuild: function (results) {
+    if (process.env.EMBER_ENV === 'development') {
+      console.log('Not processing asset map in development'.rainbow);
+      return;
+    }
+
     var fs          = require('fs'),
         path        = require('path'),
         colors      = require('colors'),
