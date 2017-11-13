@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-inject-asset-map-unless-dev",
-  "version": "0.0.3",
+  "version": "1.1.0",
   "description": "Get access to Brocfile's generated assetMap.json in your ember-cli app.",
   "directories": {
     "doc": "doc",
@@ -21,9 +21,9 @@
   "author": "Josh Caffey",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.0.0",
+    "broccoli-asset-rev": "^2.5.0",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
-    "ember-cli": "0.1.12",
+    "ember-cli": "2.13.2",
     "ember-cli-6to5": "^3.0.0",
     "ember-cli-app-version": "0.3.1",
     "ember-cli-content-security-policy": "0.3.0",
