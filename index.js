@@ -42,7 +42,7 @@ module.exports = {
         fs.writeFileSync(jsPath, injectedJs, 'utf-8');
       } else {
         success = false;
-        console.log(`Unable to inject asset map. File "${jsPath}" does not exist.`);
+        console.error(`Unable to inject asset map. File "${jsPath}" does not exist.`);
       }
       return success;
     }
